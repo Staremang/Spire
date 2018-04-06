@@ -2553,10 +2553,14 @@ audio {
 .scale__item_4 {
   top: 78%;
 }
-.scale__item.active {
+.scale__item:hover {
   opacity: 1;
 }
-.scale__item.active > * {
+.scale__item:hover > .scale__item-name {
+  display: block;
+  opacity: 1;
+}
+.scale__item.active {
   opacity: 1;
 }
 .scale__item.active > .scale__item-name {

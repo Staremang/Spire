@@ -484,12 +484,16 @@ audio {
 		&_4 {
 			top: 78%;
 		}
+		&:hover {
+			opacity: 1;
+			> .scale__item-name {
+				display: block;
+				opacity: 1;
+			}
+		}
 		&.active {
 //			border-color: black;
 			opacity: 1;
-			> * {
-				opacity: 1;
-			}
 			> .scale__item-name {
 				display: block;
 			}
