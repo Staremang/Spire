@@ -20,11 +20,11 @@
 </head>
 <body>
 	<header class="header">
-		<div class="header__logo"></div>
+		<a href="index.html" class="header__logo"></a>
 		<nav class="header__nav">
 			<a href="services.html" class="header__link">Услуги</a>
 			<a href="contacts.html" class="header__link active">Обратная связь</a>
-			<a href="#" class="header__btn">
+			<a href="contacts.html" class="header__btn">
 				<span>Сделать заказ</span>
 				<i class="fas fa-paper-plane"></i>
 			</a>
@@ -36,59 +36,61 @@
 			<div class="scale__bg"></div>
 			<div class="scale__name">обратная связь</div>
 		</div>
-		<h1 class="contacts__title">Свяжитесь с нами</h1>
-		<div class="contacts__block">
-			<form class="contacts__form">
-				<h2 class="contacts__subtitle">Чем мы можем Вам помочь?</h2>
-				<div class="contacts-form">
-					<div class="contacts-form__input-group row">
-						<div class="col-3">
-	<!--						<label for="contacts-name-1"></label>-->
-							<input  id="contacts-name-1" type="radio" class="contacts-form__checkbox" name="type" value="SMM" required>
+		<div class="contacts__wrapper">
+			<h1 class="contacts__title">Свяжитесь с нами</h1>
+			<div class="contacts__block">
+				<form class="contacts__form">
+					<h2 class="contacts__subtitle">Чем мы можем Вам помочь?</h2>
+					<div class="contacts-form">
+						<div class="contacts-form__input-group row">
+							<div class="col-3">
+		<!--						<label for="contacts-name-1"></label>-->
+								<input  id="contacts-name-1" type="radio" class="contacts-form__checkbox" name="type" value="SMM" required>
+							</div>
+							<div class="col-3">
+		<!--						<label for="contacts-name-2"></label>-->
+								<input  id="contacts-name-2" type="radio" class="contacts-form__checkbox" name="type" value="Ролик" required>
+							</div>
+							<div class="col-3">
+		<!--						<label for="contacts-name-3"></label>-->
+								<input  id="contacts-name-3" type="radio" class="contacts-form__checkbox" name="type" value="Сайт" required>
+							</div>
+							<div class="col-3">
+		<!--						<label for="contacts-name-4"></label>-->
+								<input  id="contacts-name-4" type="radio" class="contacts-form__checkbox" name="type" value="Другое" required>
+							</div>
 						</div>
-						<div class="col-3">
-	<!--						<label for="contacts-name-2"></label>-->
-							<input  id="contacts-name-2" type="radio" class="contacts-form__checkbox" name="type" value="Ролик" required>
+						<div class="contacts-form__input-group row">
+							<div class="col-6">
+								<input type="text" class="contacts-form__input input" placeholder="Ваше имя" required>
+							</div>
+							<div class="col-6">
+								<input type="text" class="contacts-form__input input" placeholder="Ваш телефон" required>
+							</div>
 						</div>
-						<div class="col-3">
-	<!--						<label for="contacts-name-3"></label>-->
-							<input  id="contacts-name-3" type="radio" class="contacts-form__checkbox" name="type" value="Сайт" required>
+						<div class="contacts-form__input-group">
+							<textarea name="" id="" cols="30" rows="10" class="contacts-form__textarea textarea" placeholder="Введите сообщение"></textarea>
 						</div>
-						<div class="col-3">
-	<!--						<label for="contacts-name-4"></label>-->
-							<input  id="contacts-name-4" type="radio" class="contacts-form__checkbox" name="type" value="Другое" required>
+						<div class="contacts-form__form-bottom">
+							<button type="submit" class="btn contacts-form__btn">Отправить</button>
 						</div>
 					</div>
-					<div class="contacts-form__input-group row">
-						<div class="col-6">
-							<input type="text" class="contacts-form__input input" placeholder="Ваше имя" required>
+				</form>
+				<div class="contacts__social">
+					<h2 class="contacts__subtitle">Чем мы можем Вам помочь?</h2>
+					<div class="contacts-social">
+						<div class="contacts-social__persons">
+							<div class="contacts-social__name">Игорь</div>
+							<a href="#" class="contacts-social__email">7783444@gmail.com</a>
+							<div class="contacts-social__name">Игорь</div>
+							<a href="#" class="contacts-social__email">7783444@gmail.com</a>
 						</div>
-						<div class="col-6">
-							<input type="text" class="contacts-form__input input" placeholder="Ваш телефон" required>
+						<div class="contacts-social__orange-block">
+							<a href="#" class="contacts-social__link"><i class="fab fa-facebook-f"></i></a>
+							<a href="#" class="contacts-social__link"><i class="fab fa-vk"></i></a>
+							<a href="#" class="contacts-social__link"><i class="fab fa-instagram"></i></a>
+							<a href="#" class="contacts-social__link"><i class="fab fa-telegram"></i></a>
 						</div>
-					</div>
-					<div class="contacts-form__input-group">
-						<textarea name="" id="" cols="30" rows="10" class="contacts-form__textarea textarea" placeholder="Введите сообщение"></textarea>
-					</div>
-					<div class="contacts-form__form-bottom">
-						<button type="submit" class="btn contacts-form__btn">Отправить</button>
-					</div>
-				</div>
-			</form>
-			<div class="contacts__social">
-				<h2 class="contacts__subtitle">Чем мы можем Вам помочь?</h2>
-				<div class="contacts-social">
-					<div class="contacts-social__persons">
-						<div class="contacts-social__name">Игорь</div>
-						<a href="#" class="contacts-social__email">7783444@gmail.com</a>
-						<div class="contacts-social__name">Игорь</div>
-						<a href="#" class="contacts-social__email">7783444@gmail.com</a>
-					</div>
-					<div class="contacts-social__orange-block">
-						<a href="#" class="contacts-social__link"><i class="fab fa-facebook-f"></i></a>
-						<a href="#" class="contacts-social__link"><i class="fab fa-vk"></i></a>
-						<a href="#" class="contacts-social__link"><i class="fab fa-instagram"></i></a>
-						<a href="#" class="contacts-social__link"><i class="fab fa-telegram"></i></a>
 					</div>
 				</div>
 			</div>
