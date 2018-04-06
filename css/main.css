@@ -2506,14 +2506,14 @@ audio {
 .scale__item {
   cursor: pointer;
   position: absolute;
-  width: 27px;
-  height: 27px;
+  width: 33px;
+  height: 33px;
   border-radius: 50%;
-  border: 3px solid #797979;
+  border: 3px solid black;
   right: 0;
-  margin-top: -13.5px;
-  margin-right: -13.5px;
-  font-size: 10px;
+  margin-top: -16.5px;
+  margin-right: -16.5px;
+  font-size: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2523,12 +2523,29 @@ audio {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  opacity: .5;
 }
 .scale__item_1 {
   top: 27%;
 }
+.scale__item_1:before {
+  content: '';
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  background: url(../img/smm-icon.png) no-repeat;
+  background-size: 100%;
+}
 .scale__item_2 {
   top: 44%;
+}
+.scale__item_2:before {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 29px;
+  background: url(../img/reputation-icon.png) no-repeat;
+  background-size: 100%;
 }
 .scale__item_3 {
   top: 61%;
@@ -2537,7 +2554,7 @@ audio {
   top: 78%;
 }
 .scale__item.active {
-  border-color: black;
+  opacity: 1;
 }
 .scale__item.active > * {
   opacity: 1;
