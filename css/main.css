@@ -2318,6 +2318,11 @@ audio {
 }
 @media (min-width: 1040px) {
   .header__logo {
+    width: 120px;
+  }
+}
+@media (min-width: 1690px) {
+  .header__logo {
     width: 140px;
   }
 }
