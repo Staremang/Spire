@@ -2293,7 +2293,7 @@ audio {
   padding-right: 15px;
   height: 80px;
   z-index: 100;
-  position: absolute;
+  position: fixed;
   width: 100%;
 }
 @media (min-width: 1040px) {
