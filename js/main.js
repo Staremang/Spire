@@ -111,6 +111,10 @@
 })(jQuery);
 
 $(document).ready(function () {
+	window.addEventListener('resize', function () {
+		document.querySelector('.wrapper').style.height = document.documentElement.clientHeight + 'px';
+	})
+	document.querySelector('.wrapper').style.height = document.documentElement.clientHeight + 'px';
 	if ($('.section-services').length > 0) {
 		
 		$('.scale__bg').height($('[data-scale="1"]').data('scale-pos') + '%');
