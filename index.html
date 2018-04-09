@@ -21,7 +21,12 @@
 <body>
 	<header class="header">
 		<a href="index.html" class="header__logo"></a>
-		<nav class="header__nav">
+		<button class="header__btn-nav " data-menu-btn>
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<nav class="header__nav ">
 			<a href="services.html" class="header__link">Услуги</a>
 			<a href="contacts.html" class="header__link">Обратная связь</a>
 			<a href="contacts.html" class="header__btn">
@@ -32,31 +37,37 @@
 	</header>
 	<div class="wrapper">
 	<section class="hero">
-		<img src="img/logo.png" alt="Spire" class="hero__logo">
-		<div class="hero__block">
-			<h1 class="hero__title">Digital Agency</h1>
-			<h2 class="hero__subtitle">Контент.  Таргетинг.  Визуализация.</h2>
-		</div>
-		<form class="hero__form">
-			<input class="hero__input input" type="email" autocomplete="email" placeholder="Ваш email" required>
-			<button class="btn" type="submit">Stay Tuned!</button>
-		</form>
-		<div class="hero__social-block">
-			<a target="_blank" href="https://facebook.com/" class="hero__social-link icon-fb">
-				<i class="fab fa-facebook-f"></i>
-			</a>
-			<a target="_blank" href="https://vk.com/" class="hero__social-link icon-vk">
-				<i class="fab fa-vk"></i>
-				
-			</a>
-			<a target="_blank" href="https://instagram.com/" class="hero__social-link icon-inst">
-				<i class="fab fa-instagram"></i>
-			</a>
-			<a target="_blank" href="#" class="hero__social-link icon-tg">
-				<i class="fab fa-telegram"></i>
-			</a>
+		<div class="hero__wrapper">
+			<img src="img/logo.png" alt="Spire" class="hero__logo">
+			<div class="hero__block">
+				<h1 class="hero__title">Digital Agency</h1>
+				<h2 class="hero__subtitle">Контент.  Таргетинг.  Визуализация.</h2>
+			</div>
+			<form class="hero__form">
+				<input class="hero__input input" type="email" autocomplete="email" placeholder="Ваш email" required>
+				<button class="btn hero__btn" type="submit">Stay Tuned!</button>
+			</form>
+			<div class="hero__social-block">
+				<a target="_blank" href="https://facebook.com/" class="hero__social-link icon-fb">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+				<a target="_blank" href="https://vk.com/" class="hero__social-link icon-vk">
+					<i class="fab fa-vk"></i>
+
+				</a>
+				<a target="_blank" href="https://instagram.com/" class="hero__social-link icon-inst">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a target="_blank" href="#" class="hero__social-link icon-tg">
+					<i class="fab fa-telegram"></i>
+				</a>
+			</div>
 		</div>
 	</section> 
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<script src="js/jquery.onepage-scroll.min.js"></script>
+	<script src="js/main.min.js"></script>
 </body>
 </html>

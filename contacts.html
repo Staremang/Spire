@@ -21,6 +21,11 @@
 <body>
 	<header class="header">
 		<a href="index.html" class="header__logo"></a>
+		<button class="header__btn-nav " data-menu-btn>
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
 		<nav class="header__nav">
 			<a href="services.html" class="header__link">Услуги</a>
 			<a href="contacts.html" class="header__link active">Обратная связь</a>
@@ -77,13 +82,17 @@
 					</div>
 				</form>
 				<div class="contacts__social">
-					<h2 class="contacts__subtitle">Чем мы можем Вам помочь?</h2>
+					<h2 class="contacts__subtitle">Пишите нам, все расскажем!</h2>
 					<div class="contacts-social">
 						<div class="contacts-social__persons">
-							<div class="contacts-social__name">Игорь</div>
-							<a href="#" class="contacts-social__email">7783444@gmail.com</a>
-							<div class="contacts-social__name">Игорь</div>
-							<a href="#" class="contacts-social__email">7783444@gmail.com</a>
+							<div class="contacts-social__people">
+								<div class="contacts-social__name">Игорь</div>
+								<a href="mailto:7783444@gmail.com" class="contacts-social__email">7783444@gmail.com</a>
+							</div>
+							<div class="contacts-social__people">
+								<div class="contacts-social__name">Никита</div>
+								<a href="mailto:zhubrinc@gmail.com" class="contacts-social__email">zhubrinc@gmail.com</a>
+							</div>
 						</div>
 						<div class="contacts-social__orange-block">
 							<a href="#" class="contacts-social__link"><i class="fab fa-facebook-f"></i></a>
@@ -97,5 +106,9 @@
 		</div>
 	</section> 
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<script src="js/jquery.onepage-scroll.min.js"></script>
+	<script src="js/main.min.js"></script>
 </body>
 </html>
