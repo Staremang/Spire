@@ -921,6 +921,10 @@ audio {
 		margin-right: 100px;
 		position: relative;
 		width: 70%;
+		margin-bottom: 100px;
+		@media (min-width: @width-md) {
+			margin-bottom: 0;
+		}
 		
 		@media (min-width: @width-lg) {
 			width: 960px;
@@ -940,19 +944,31 @@ audio {
 		}
 	}
 	&__figure {
-		background: url(../img/reputation-img.png) center left no-repeat;
+		background: url(../img/reputation-img-m.png) center left no-repeat;
 		background-size: contain;
 		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
+		top: 55%;
 		max-height: 90%;
 		
-		width: 130px;
-		height: 607px;
-		opacity: .15;
+		width: 1134px/6;
+		height: 590px/6;
 		
-		right: 15%;
+//		opacity: .15;
+		left: 18%;
+		@media (min-width: @width-sm) {
+			left: 100px;
+		}
 		@media (min-width: @width-md) {
+			top: 50%;
+			left: auto;
+			right: 15%;
+			height: 607px;
+			transform: translateY(-50%);
+			
+			background: url(../img/reputation-img.png) center left no-repeat;
+			background-size: contain;
+			
+			
 			width: 314px;
 			right: 100px;
 			opacity: 1;
@@ -1029,15 +1045,24 @@ audio {
 		position: absolute;
 		background: url(../img/video-figure.png) center no-repeat;
 		background-size: contain;
-		top: 50%;
-		transform: translateY(-50%);
-		max-height: 90%;
 		
-		left: 20%;
-		margin-left: -50px;
-		opacity: .1;
-		width: 200px;
-		height: 200px;
+		top: 47%;
+		
+		right: 88px;
+		
+		
+		width: 170px;
+		height: 170px;
+		
+		@media (min-width: @width-sm) {
+			width: 200px;
+			height: 200px;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 20%;
+			margin-left: -50px;
+			right: auto;
+		}
 		@media (min-width: @width-md) {
 			opacity: 1;
 			width: 400px;
@@ -1055,7 +1080,10 @@ audio {
 		}
 	}
 	&__content {
-		
+		margin-bottom: 150px;
+		@media (min-width: @width-sm) {
+			margin-bottom: 0;
+		}
 		@media (min-height: @height-lg) {
 			margin-bottom: 270px;
 		}

@@ -3065,6 +3065,12 @@ audio {
   margin-right: 100px;
   position: relative;
   width: 70%;
+  margin-bottom: 100px;
+}
+@media (min-width: 768px) {
+  .services-reputation__content {
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 1040px) {
   .services-reputation__content {
@@ -3090,21 +3096,31 @@ audio {
   }
 }
 .services-reputation__figure {
-  background: url(../img/reputation-img.png) center left no-repeat;
+  background: url(../img/reputation-img-m.png) center left no-repeat;
   background-size: contain;
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  top: 55%;
   max-height: 90%;
-  width: 130px;
-  height: 607px;
-  opacity: .15;
-  right: 15%;
+  width: 189px;
+  height: 98.33333333px;
+  left: 18%;
+}
+@media (min-width: 576px) {
+  .services-reputation__figure {
+    left: 100px;
+  }
 }
 @media (min-width: 768px) {
   .services-reputation__figure {
+    top: 50%;
+    left: auto;
+    right: 15%;
+    height: 607px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: url(../img/reputation-img.png) center left no-repeat;
+    background-size: contain;
     width: 314px;
     right: 100px;
     opacity: 1;
@@ -3189,16 +3205,23 @@ audio {
   position: absolute;
   background: url(../img/video-figure.png) center no-repeat;
   background-size: contain;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  max-height: 90%;
-  left: 20%;
-  margin-left: -50px;
-  opacity: .1;
-  width: 200px;
-  height: 200px;
+  top: 47%;
+  right: 88px;
+  width: 170px;
+  height: 170px;
+}
+@media (min-width: 576px) {
+  .services-video__figure {
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 20%;
+    margin-left: -50px;
+    right: auto;
+  }
 }
 @media (min-width: 768px) {
   .services-video__figure {
@@ -3218,6 +3241,14 @@ audio {
   .services-video__figure {
     width: 513px;
     height: 513px;
+  }
+}
+.services-video__content {
+  margin-bottom: 150px;
+}
+@media (min-width: 576px) {
+  .services-video__content {
+    margin-bottom: 0;
   }
 }
 @media (min-height: 1000px) {
