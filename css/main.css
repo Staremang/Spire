@@ -2178,6 +2178,7 @@ audio {
   border-radius: 0;
   -webkit-box-shadow: none!important;
   box-shadow: none!important;
+  box-shadow: none;
   border: 1px solid #707070;
   font-family: 'Futura', sans-serif;
   font-size: 1.5rem;
@@ -3362,20 +3363,37 @@ audio {
   overflow: auto;
   height: 100%;
 }
+.contacts__title-container {
+  width: 500px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 1040px) {
+  .contacts__title-container {
+    width: 100%;
+  }
+}
 .contacts__title {
-  padding-left: 20px;
   padding-top: 30px;
   display: inline-block;
   position: relative;
   margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
 }
 @media (min-height: 768px) {
   .contacts__title {
     padding-top: 110px;
+  }
+}
+@media (min-width: 768px) {
+  .contacts__title {
     padding-left: 30px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .contacts__title {
     padding-left: 62px;
   }
@@ -3407,12 +3425,12 @@ audio {
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  background: #f4f4f4;
   max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 1040px) {
   .contacts__block {
-    background: none;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
@@ -3455,10 +3473,16 @@ audio {
   -ms-flex: 0 0;
   flex: 0 0;
   padding: 20px;
+  margin-top: 20px;
 }
 @media (min-width: 768px) {
   .contacts__social {
     padding: 30px;
+  }
+}
+@media (min-width: 1040px) {
+  .contacts__social {
+    margin-top: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -3501,6 +3525,7 @@ audio {
   -webkit-appearance: none;
   display: block;
   width: 100%;
+  height: 3rem;
   background: white;
   text-align: center;
   padding: 0.8rem 0;
@@ -3508,6 +3533,7 @@ audio {
   font-size: inherit;
   border-radius: 0;
   outline: none;
+  border: 0;
 }
 .contacts-form__checkbox:checked {
   background: #dadada;

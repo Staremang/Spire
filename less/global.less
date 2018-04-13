@@ -127,6 +127,7 @@ audio {
 	outline: none;
 	border-radius: 0;
 	box-shadow: none!important;
+	box-shadow: none;
 	border: 1px solid #707070;
 	font-family: 'Futura', sans-serif;
 	.font-size (30);
@@ -1172,6 +1173,16 @@ audio {
 		overflow: auto;
 		height: 100%;
 	}
+	&__title-container {
+		width: 500px;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		
+		@media (min-width: @width-lg) {
+			width: 100%;	
+		}
+	}
 	&__title {
 		padding-left: 20px;
 		padding-top: 30px;
@@ -1179,12 +1190,26 @@ audio {
 		position: relative;
 		margin-top: 0;
 		
+//		width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+		
+		padding-left: 20px;
+		
 		@media (min-height: @height-md) {
 			padding-top: 110px;
+		}
+		
+		@media (min-width: @width-md) {
 			padding-left: 30px;
 		}
 		
-		@media (min-width: @width-xl) {
+		
+		@media (min-width: @width-lg) {
+			
+		}
+		
+		@media (min-width: 1440px) {
 			padding-left: 62px;
 		}
 		&:after {
@@ -1205,11 +1230,13 @@ audio {
 		
 		flex-direction: column;
 		align-items: stretch;
-		background: #f4f4f4;
+//		background: #f4f4f4;
 //		align-items: center;
 		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
 		@media (min-width: @width-lg) {
-			background: none;
+//			background: none;
 			align-items: flex-start;
 			flex-direction: row;
 			max-width: none;
@@ -1242,9 +1269,13 @@ audio {
 		flex: 0 0;
 		
 		padding: 20px;
+		margin-top: 20px;
 		
 		@media (min-width: @width-md) {
 			padding: 30px;
+		}
+		@media (min-width: @width-lg) {
+			margin-top: 0;
 		}
 		@media (min-width: @width-xl) {
 			margin-left: 25px;
@@ -1282,6 +1313,7 @@ audio {
 		-webkit-appearance: none;
 		display: block;
 		width: 100%;
+		height: 3rem;
 		
 //		flex: 0 0 25%;
 //		max-width: 25%;
@@ -1296,6 +1328,7 @@ audio {
 		font-size: inherit;
 		border-radius: 0;
 		outline: none;
+		border: 0;
 		&:checked {
 			background: #dadada;
 		}
