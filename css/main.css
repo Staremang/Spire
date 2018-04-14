@@ -2795,8 +2795,9 @@ audio {
   background-size: 100%;
   left: 50%;
   top: 50%;
-  margin-left: -10px;
-  margin-top: -10px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .scale__item_2 {
   top: 44%;
@@ -2810,8 +2811,9 @@ audio {
   background-size: 100%;
   left: 50%;
   top: 50%;
-  margin-left: -8px;
-  margin-top: -9px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .scale__item_3 {
   top: 61%;
