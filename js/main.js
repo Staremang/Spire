@@ -140,6 +140,43 @@ $(document).ready(function () {
 	
 	
 	
+	$('form').on('submit', function (e) {
+		e.preventDefault();
+		var data = $(this).serialize(),
+			id = $(this).attr('id');
+
+
+		var submitBtn = $(this).find('button[type="submit"]'),
+			submitBtnText = submitBtn.text();
+		
+		
+		$.ajax({
+			type: "POST",
+			url: 'mail.php',
+			data: data,
+			beforeSend: function () {
+				submitBtn.attr('disabled', '');
+				submitBtn.text('Отправка...');
+			},
+			error: function (error) {
+				alert('Ошибка ' + error.status + '. Повторите позднее.');
+				submitBtn.removeAttr('disabled');
+				submitBtn.text(submitBtnText);
+			},
+			success: function (data) {
+				submitBtn.removeAttr('disabled');
+				submitBtn.text(submitBtnText);
+				
+				data = JSON.parse(data);
+				if (data.sended) {
+					alert ('Спасибо!');
+				} else {
+					alert (data.message);
+				}
+
+			}
+		});
+	});
 
 	$('[data-menu-btn]').click(function() {
 		if (document.querySelector('.header__btn-nav').classList.contains('active')) {

@@ -69,16 +69,17 @@
 						</div>
 						<div class="contacts-form__input-group row">
 							<div class="col-6">
-								<input type="text" class="contacts-form__input input" placeholder="Ваше имя" required>
+								<input type="text" class="contacts-form__input input" name="name" placeholder="Ваше имя" required>
 							</div>
 							<div class="col-6">
-								<input type="text" class="contacts-form__input input" placeholder="Ваш телефон" required>
+								<input type="text" class="contacts-form__input input" name="tel" placeholder="Ваш телефон" required>
 							</div>
 						</div>
 						<div class="contacts-form__input-group">
-							<textarea name="" id="" cols="30" rows="10" class="contacts-form__textarea textarea" placeholder="Введите сообщение"></textarea>
+							<textarea name="msg" id="" cols="30" rows="10" class="contacts-form__textarea textarea" placeholder="Введите сообщение"></textarea>
 						</div>
 						<div class="contacts-form__form-bottom">
+							<input type="hidden" name="form-type" value="contacts-form">
 							<button type="submit" class="btn contacts-form__btn">Отправить</button>
 						</div>
 					</div>
